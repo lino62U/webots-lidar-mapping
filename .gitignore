@@ -1,0 +1,72 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# Archivos de dependencias
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================
+# Webots
+# =========================
+# Archivos temporales o backups
+*.bak
+*.tmp
+*.wbo
+*.wbt~  # backups de mundos
+*~      # backups temporales
+
+# Directorios de cache
+cache/
+webots_cache/
+
+# =========================
+# Datos y resultados
+# =========================
+# Archivos generados por simulación
+*.csv
+*.txt
+*.log
+
+# Carpeta de resultados
+results/
+output/
+data/
+build/
+
+
+# =========================
+# IDEs y editores
+# =========================
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Otros
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter (por si acaso)
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+
+# =========================
+# Archivos de build o empaquetado
+# =========================
+build/
+dist/
+*.egg-info/

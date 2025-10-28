@@ -96,6 +96,7 @@
   
       // Guardar posición del robot
       fprintf(path_file, "%f,%f\n", robot_x, robot_z);
+      fflush(path_file);  // 👈 fuerza escritura inmediata
   
       // === MAPEO DE OBSTÁCULOS ===
       for (int i = 0; i < lidar_res; i++) {
@@ -119,6 +120,9 @@
           wb_display_draw_pixel(display, gx, gy);
           display_grid[gx][gy] = 1;
           fprintf(map_file, "%f,%f\n", point_x, point_z);
+          
+          fflush(map_file);  // 👈 fuerza escritura inmediata
+
         }
       }
   
