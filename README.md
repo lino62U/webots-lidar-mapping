@@ -119,12 +119,14 @@ El script:
 
 El robot convierte las lecturas del LiDAR (distancia y ángulo) en coordenadas globales mediante trigonometría:
 
-$$
-\text{absolute\_angle} = \text{angle\_lidar} - \text{robot\_theta} - \pi/2 \\
-\text{point\_x} = \text{robot\_x} + r \cdot \cos(\text{absolute\_angle}) \\
-\text{point\_z} = \text{robot\_z} + r \cdot \sin(\text{absolute\_angle})
-$$
+```
 
+absolute_angle = angle_lidar - robot_theta - π/2
+point_x = robot_x + r * cos(absolute_angle)
+point_z = robot_z + r * sin(absolute_angle)
+
+```
+Estas coordenadas se proyectan sobre una grilla de 200x200 píxeles, equivalente a 2x2 metros reales.
 
 ---
 
